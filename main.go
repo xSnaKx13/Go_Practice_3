@@ -44,7 +44,7 @@ func main() {
 		median = float64(numbersInt[lenght/2])
 	}
 
-	fmt.Println(numbersInt)
+	fmt.Printf("Числа: %d\n", numbersInt)
 	fmt.Printf("Сумма чисел равна: %d\n", sum)
 	fmt.Printf("Среднее значение равно: %d\n", avg)
 	fmt.Printf("Медиана чисел равна: %.2f\n", median)
