@@ -39,13 +39,26 @@ func main() {
 	var median float64
 
 	if lenght%2 == 0 {
-		median = float64(numbersInt[lenght/2-1]) + float64(numbersInt[lenght/2])/2
+		median = (float64(numbersInt[lenght/2-1]) + float64(numbersInt[lenght/2])) / 2
 	} else {
 		median = float64(numbersInt[lenght/2])
 	}
 
-	fmt.Println(numbersInt)
-	fmt.Printf("Сумма чисел равна: %d\n", sum)
-	fmt.Printf("Среднее значение равно: %d\n", avg)
-	fmt.Printf("Медиана чисел равна: %.2f\n", median)
+	fmt.Println("Выберете действие:\n1 - сумма чисел\n2 - среднее значение\n3 - медиана чисел")
+	var choise int
+	fmt.Scan(&choise)
+	switch choise {
+	case 1:
+		fmt.Printf("Числа: %d\n", numbersInt)
+		fmt.Printf("Сумма чисел равна: %d\n", sum)
+	case 2:
+		fmt.Printf("Числа: %d\n", numbersInt)
+		fmt.Printf("Среднее значение равно: %d\n", avg)
+	case 3:
+		fmt.Printf("Числа: %d\n", numbersInt)
+		fmt.Printf("Медиана чисел равна: %.2f\n", median)
+	default:
+		fmt.Println("Некорректное значение")
+	}
+
 }
