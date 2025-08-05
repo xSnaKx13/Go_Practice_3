@@ -39,7 +39,7 @@ func main() {
 	var median float64
 
 	if lenght%2 == 0 {
-		median = float64(numbersInt[lenght/2-1]) + float64(numbersInt[lenght/2])/2
+		median = (float64(numbersInt[lenght/2-1]) + float64(numbersInt[lenght/2])) / 2
 	} else {
 		median = float64(numbersInt[lenght/2])
 	}
