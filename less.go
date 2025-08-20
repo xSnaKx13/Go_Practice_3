@@ -10,7 +10,8 @@ func less(){
 }
 
 func printArr(array *[]int){
-	for i := len(*array) - 1, i > 0, i--{
-		fmt.Print(array[i])
+	arr := *array
+	for i := len(*array) - 1; i >= 0; i--{
+		fmt.Print(arr[i])
 	}
 }

@@ -48,4 +48,5 @@ func main() {
 	fmt.Printf("Сумма чисел равна: %d\n", sum)
 	fmt.Printf("Среднее значение равно: %d\n", avg)
 	fmt.Printf("Медиана чисел равна: %.2f\n", median)
+	less()
 }
